@@ -28,19 +28,19 @@ void	ft_is_negative(int n) //no try return in conditions because of void
     write(1, "\n", 1);
 }
 
-/* int main(void)
+/*int main(void)
 {
     ft_is_negative(-123456);
     ft_is_negative(0);
     ft_is_negative(123456);
     ft_is_negative(-2147483648); // int min
     ft_is_negative(2147483647);  // int max
-    ft_is_negative(-2147483649); // int min loop - falls in positif (int long)//
-    ft_is_negative(21474836448); // int max loop - falls in negatif (int long)//
+    //ft_is_negative(-2147483649); // int min loop - falls in positif (int long)//
+    //ft_is_negative(21474836448); // int max loop - falls in negatif (int long)//
     return (0);
-} */
+}*/
 
-/* int	main(int argc, char **argv)
+/*int	main(int argc, char **argv)
 {
 	if (argc > 1)
 	{
@@ -48,4 +48,4 @@ void	ft_is_negative(int n) //no try return in conditions because of void
 		return (0);
 	}
 	return (1);
-} */
+}*/
