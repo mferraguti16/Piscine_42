@@ -34,21 +34,21 @@ void	ft_putnbr(int nb)
 		write(1, &nb_char, 1);
 }
 
-/* #include <stdio.h>
+/*#include <stdio.h>
 
 int	main()
 {
 	printf("%d", ft_putnbr(543210));
 	return (0);
-} */
+}*/
 
-/* int main()
+/*int main()
 {
 	ft_putnbr(542310);
 	return (0);
-} */
+}*/
 
-/* #include <stdlib.h>
+/*#include <stdlib.h>
 
 int main(int argc, char **argv)
 {
@@ -58,4 +58,4 @@ int main(int argc, char **argv)
 		return (0);
 	}
 	return (1);
-} */
+}*/
