@@ -22,23 +22,23 @@ void ft_putchar(char c)
 	return (0);
 }*/
 
-/* int main(int argc, char **argv) //tableau de string
+/*int main(int argc, char **argv) //argument du main
 {
+    if (argc > 1) //et non argc==2 car pas mentionné seulement un argument après le main//
     {
-        if (argc > 1)
-        {
-            ft_putchar(argv[1][0]);
-            return (0);
-        }
-        else
-            return (1);
+        ft_putchar(argv[1][0]); //va dans le premier argument après le nom du prog[1] au premier indice[0]
+        return (0);
+    } else {
+        return (1);
     }
-    write(1, "\n", 1);
-} */
+}*/
 
-/* (1) be careful to not forget the [0] or you will have the following error: 
-    incompatible pointer to integer conversion passing 'char *'(string) to parameter of type 'char'(char c); dereference with * [-Wint-conversion]
-        This error indicates that you tried to pass an array of char as ouptut instead of the single char requested as output
-            argv[1][0]  =>  ./ft_putchar abc  =>  a% 
-            argv[1]  =>  ./ft_putchar abc  =>  abc% 
-                /!\ ERROR: putchar = 1 char only! */
+/* 
+Do not forget the [0] or you will have the following error: 
+incompatible pointer to integer conversion passing 'char *'(string) to parameter of type 'char'(char c); 
+dereference with * [-Wint-conversion]
+
+    This error indicates that you tried to pass a string of char (so multiple char) as ouptut instead of the one single char requested. 
+    argv[1][0]  =>  ./ft_putchar abc  =>  a% 
+    argv[1]  =>  ./ft_putchar abc  =>  abc% 
+*/
