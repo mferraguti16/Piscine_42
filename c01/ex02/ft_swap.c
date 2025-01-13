@@ -9,7 +9,6 @@
 /*   Updated: 2022/08/25 19:59:12 by mferragu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
 
 void	ft_swap(int *a, int *b)
 {
@@ -20,7 +19,8 @@ void	ft_swap(int *a, int *b)
 	*b = copy;
 }
 
-/* int	main(void)
+/* #include <stdio.h>
+int	main(void)
 {
 	int i  = 7;
 	int j  = 3;
@@ -28,6 +28,6 @@ void	ft_swap(int *a, int *b)
 	int *b = &j;
 
 	ft_swap(a, b);
-	printf("i value was 7 and now is : %d\n",*a);
-	printf("j value was 3 and now is : %d\n",*b);
+	printf("i value was 7 and now is : %d\n", *a);
+	printf("j value was 3 and now is : %d\n", *b);
 } */
