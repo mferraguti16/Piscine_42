@@ -9,7 +9,6 @@
 /*   Updated: 2022/08/18 18:14:39 by mferragu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 
 void	ft_ft(int *nbr)
 {
@@ -28,5 +27,5 @@ int	main()
 	ft_ft(ptr);
 	printf("%d\n", *ptr);
 	printf("%d\n", a);
-	printf("%p\n", &a); // print the memory address of the variable a in hexadecima (%p pointer
+	printf("%p\n", &a); // print the memory address of the variable a in hexadecimal (%p for pointer)
 } */
