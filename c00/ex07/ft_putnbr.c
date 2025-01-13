@@ -20,10 +20,10 @@ void	ft_putnbr(int nb)
 		write(1, "-2147483648", 11); //int min case
 		return ;
 	}
-	if (nb < 0)
+	if (nb < 0) //if nb neg
 	{
-		write(1, "-", 1);
-		nb = -nb; //if nb neg, putdown the minus sign then transform negative nb with -nb so it's become nb positive. 
+		write(1, "-", 1); //putdown the minus sign
+		nb = -nb; // -nb + -nb go back in positive
 	}
 	if (nb > 9)
 	{
@@ -34,22 +34,23 @@ void	ft_putnbr(int nb)
 		write(1, &nb_char, 1);
 }
 
-/*#include <stdio.h>
-
-int	main()
+#include <stdio.h>
+int	main(void)
 {
-	printf("%d", ft_putnbr(543210));
+	ft_putnbr(543210); // Test positive number
+	write(1, "\n", 1);
+	ft_putnbr(-12345); // Test negative number
+	write(1, "\n", 1);
+	ft_putnbr(0); // Test zero
+	write(1, "\n", 1);
+	ft_putnbr(-2147483648); // Test INT_MIN
+	write(1, "\n", 1);
+	ft_putnbr(2147483647); // Test INT_MAX
+	write(1, "\n", 1);
 	return (0);
-}*/
+} 
 
-/*int main()
-{
-	ft_putnbr(542310);
-	return (0);
-}*/
-
-/*#include <stdlib.h>
-
+#include <stdlib.h>
 int main(int argc, char **argv)
 {
 	if (argc > 1)
@@ -58,4 +59,4 @@ int main(int argc, char **argv)
 		return (0);
 	}
 	return (1);
-}*/
+}
