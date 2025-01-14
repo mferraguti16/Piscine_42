@@ -15,7 +15,7 @@ void	ft_ft(int *nbr)
 	*nbr = 42; // changes the value at the memory address that the pointer refers to, here 42
 }
 
-/* #include <stdio.h>
+#include <stdio.h>
 int	main()
 {
 	int	a;
@@ -28,4 +28,4 @@ int	main()
 	printf("%d\n", *ptr);
 	printf("%d\n", a);
 	printf("%p\n", &a); // print the memory address of the variable a in hexadecimal (%p for pointer)
-} */
+}

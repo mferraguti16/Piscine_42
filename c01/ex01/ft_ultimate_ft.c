@@ -15,7 +15,7 @@ void	ft_ultimate_ft(int *********nbr)
 	*********nbr = 42;
 }
 
-/* #include <stdio.h>
+#include <stdio.h>
 int main(void)
 {
 	int a = 0;
@@ -34,4 +34,4 @@ int main(void)
 	printf("Valeur de a : %d\n", a); // must print 42
 
 	return 0;
-} */
+}

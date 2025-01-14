@@ -1,32 +1,52 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_sort_int_tab.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mferragu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/24 04:20:06 by mferragu          #+#    #+#             */
-/*   Updated: 2022/08/28 00:39:37 by mferragu         ###   ########.fr       */
+/*   Created: 2022/08/24 04:40:48 by mferragu          #+#    #+#             */
+/*   Updated: 2022/08/28 21:47:01 by mferragu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int	ft_strlen(char *str)
+void	ft_sort_int_tab(int *tab, int size)
 {
-	int	len;
+	int	i;
+	int	j;
+	int	copy;
 
-	len = 0;
-	while (str[len] != '\0')
+	i = 0;
+	while (i < size -1) // because the end of my tab is always /0
 	{
-		len++;
+		j = i + 1;
+		if (tab[i] > tab[j])
+		{
+			copy = tab[i];
+			tab[i] = tab[j];
+			tab[j] = copy;
+			i = -1;
+			j = +1;
+		}
+		i++;
+		j++;
 	}
-	return (len);
 }
 
 #include <stdio.h>
-int	main()
+int	main(void)
 {
-	printf("%d", ft_strlen("mferragu"));
+	int     b;
+
+	b = 0;
+	int tab[5] = {19, -55, 3, 5, 8};
+	ft_sort_int_tab(tab, 5);
+	while (tab[b])
+	{
+		printf("%d ", tab[b]);
+		b++;
+	}
 	return (0);
 }

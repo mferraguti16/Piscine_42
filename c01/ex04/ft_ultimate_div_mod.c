@@ -19,7 +19,7 @@ void	ft_ultimate_div_mod(int *a, int *b)
 	*b = copy % *b;
 }
 
-/* #include <stdio.h>
+#include <stdio.h>
 int main(void)
 {
 	int div  = 17;
@@ -30,4 +30,4 @@ int main(void)
 	ft_ultimate_div_mod(a, b);
 	printf("div value was 17 and now is : %d\n", *a);
 	printf("mod value was 5 and now is : %d\n", *b);
-} */
+} 

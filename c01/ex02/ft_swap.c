@@ -19,7 +19,7 @@ void	ft_swap(int *a, int *b)
 	*b = copy;
 }
 
-/* #include <stdio.h>
+#include <stdio.h>
 int	main(void)
 {
 	int i  = 7;
@@ -30,4 +30,4 @@ int	main(void)
 	ft_swap(a, b);
 	printf("i value was 7 and now is : %d\n", *a);
 	printf("j value was 3 and now is : %d\n", *b);
-} */
+}

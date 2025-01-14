@@ -16,7 +16,7 @@ void	ft_div_mod(int a, int b, int *div, int *mod)
 	*mod = a % b;
 }
 
-/* #include <stdio.h>
+#include <stdio.h>
 int	main(void)
 {
 	int a = 5;
@@ -28,4 +28,4 @@ int	main(void)
 	
 	printf("Value of a is : %d\n", div);
 	printf("Value of b is : %d\n", mod);
-} */
+}
