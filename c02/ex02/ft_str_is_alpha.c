@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/* positive version 
+// version 1 //
 int	ft_str_is_alpha(char *str)
 {
 	int	i;
@@ -25,9 +25,9 @@ int	ft_str_is_alpha(char *str)
 		i++;
 	}
 	return (1);
-} */
+} 
 
-/* negative version
+// version 2 //
 int	ft_str_is_alpha(char *str)
 {
 	int	i;
@@ -41,7 +41,7 @@ int	ft_str_is_alpha(char *str)
 		i++;
 	}
 	return (1);
-} */
+}
 
 #include <unistd.h>
 #include <stdio.h> 
@@ -71,17 +71,3 @@ int	ft_str_is_alpha(char *str)
 	str = "\0";
 	printf("%s = %d\n", str, ft_str_is_alpha(str));
 } */
-
-int     main(int argc, char *argv[])
-{
-        char    c;
-
-        (void)argc;
-        c = '0';
-        ft_putstr(argv[1]);
-        c += ft_str_is_alpha(argv[1]);
-        write(1, "\n", 1);
-        write(1, &c, 1);
-        write(1, "\n", 1);
-        return (0);
-}
