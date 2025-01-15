@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/* positive version */
+/* positive version 
 int	ft_str_is_alpha(char *str)
 {
 	int	i;
@@ -25,8 +25,9 @@ int	ft_str_is_alpha(char *str)
 		i++;
 	}
 	return (1);
-}
+} */
 
+/* negative version
 int	ft_str_is_alpha(char *str)
 {
 	int	i;
@@ -40,11 +41,11 @@ int	ft_str_is_alpha(char *str)
 		i++;
 	}
 	return (1);
-}
+} */
 
 #include <unistd.h>
 #include <stdio.h> 
-int	main(void)
+/* int	main(void)
 {
 	char	e[15] = "Lavieestcool";
 	printf("%d\n", ft_str_is_alpha(e));
@@ -57,9 +58,9 @@ int	main(void)
 	char	i[22] = "lesGrainesduSABLIER";
 	printf("%d\n", ft_str_is_alpha(i));
 	return (0);
-}
+} */
 
-int	main(void)
+/* int	main(void)
 {
 	char	*str;
 
@@ -69,7 +70,7 @@ int	main(void)
 	printf("%s = %d\n", str, ft_str_is_alpha(str));
 	str = "\0";
 	printf("%s = %d\n", str, ft_str_is_alpha(str));
-}
+} */
 
 int     main(int argc, char *argv[])
 {
@@ -84,6 +85,3 @@ int     main(int argc, char *argv[])
         write(1, "\n", 1);
         return (0);
 }
-
-/* + 48 ou + '0' transform int en char 
-char to int is - 48 ou - '0' */
