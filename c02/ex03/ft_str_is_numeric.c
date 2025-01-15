@@ -38,7 +38,7 @@ int	ft_str_is_numeric(char *str)
 		i++;
 	}
 	return (1);
-} 
+}
 
 #include <stdio.h>
 int	main(void)
@@ -52,6 +52,13 @@ int	main(void)
 	str = "{{{{{{";
 	printf("%s = %d\n", str, ft_str_is_numeric(str));
 	str = "\0";
-    printf("\\0 = %d\n", ft_str_is_numeric(str)); // \0 control char not printable ASCII value 0
+    printf("\\0 = %d\n", ft_str_is_numeric(str)); // \0 control char not printable so no need to call str for %s
+	return (0);
+}
+
+int	main(int argc, char **argv)
+{
+	if (argc > 1)
+	printf("argv[1] result is : %d\n", ft_str_is_numeric(argv[1]));
 	return (0);
 }
