@@ -70,5 +70,19 @@ int	main(void)
 	printf("%s = %d\n", str, ft_str_is_alpha(str));
 }
 
+int     main(int argc, char *argv[])
+{
+        char    c;
+
+        (void)argc;
+        c = '0';
+        ft_putstr(argv[1]);
+        c += ft_str_is_alpha(argv[1]);
+        write(1, "\n", 1);
+        write(1, &c, 1);
+        write(1, "\n", 1);
+        return (0);
+}
+
 /* + 48 ou + '0' transform int en char 
 char to int is - 48 ou - '0' */
