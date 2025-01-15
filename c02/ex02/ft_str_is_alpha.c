@@ -42,6 +42,7 @@ int	ft_str_is_alpha(char *str)
 	return (1);
 }
 
+#include <unistd.h>
 #include <stdio.h> 
 int	main(void)
 {
