@@ -33,34 +33,17 @@ int	ft_str_is_alpha(char *str)
 	int	i;
 
 	i = 0;
-	while (str[i])
+	while (str[i] != '\0')
 	{
-		if (!(('A' <= str[i] && str[i] <= 'Z')
-				|| ('a' <= str[i] && str[i] <= 'z')))
+		if (!(('A' <= str[i] && str[i] <= 'Z') || ('a' <= str[i] && str[i] <= 'z')))
 			return (0);
 		i++;
 	}
 	return (1);
 }
 
-#include <unistd.h>
 #include <stdio.h> 
-/* int	main(void)
-{
-	char	e[15] = "Lavieestcool";
-	printf("%d\n", ft_str_is_alpha(e));
-	char	f[10] = "09434*76^";
-	printf("%d\n", ft_str_is_alpha(f));
-	char	g[20] = "lacha9neestlong(e";
-	printf("%d\n", ft_str_is_alpha(g));
-	char	h[2] = " ";
-	printf("%d\n", ft_str_is_alpha(h));
-	char	i[22] = "lesGrainesduSABLIER";
-	printf("%d\n", ft_str_is_alpha(i));
-	return (0);
-} */
-
-/* int	main(void)
+int	main(void)
 {
 	char	*str;
 
@@ -69,5 +52,20 @@ int	ft_str_is_alpha(char *str)
 	str = "{{{{{{";
 	printf("%s = %d\n", str, ft_str_is_alpha(str));
 	str = "\0";
+	printf("\\0 = %d\n", ft_str_is_alpha(str)); // \0 not printable so no need to call str for %s
+	str = "Lavieestc00l";
 	printf("%s = %d\n", str, ft_str_is_alpha(str));
-} */
+	str = "09434*76^";
+	printf("%s = %d\n", str, ft_str_is_alpha(str));
+	str = "lacha9neestlong(e";
+	printf("%s = %d\n", str, ft_str_is_alpha(str));
+	str = "\\sp";
+	printf("\\sp = %d\n", ft_str_is_alpha(str)); // \sp not printable so no need to call str for %s
+} 
+
+int	main(int argc, char **argv)
+{
+	if (argc > 1)
+	printf("argv[1] result is : %d\n", ft_str_is_alpha(argv[1]));
+	return (0);
+}
