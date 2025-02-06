@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mferragu <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mathilfe <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/29 17:36:42 by mferragu          #+#    #+#             */
-/*   Updated: 2022/09/01 21:53:56 by mferragu         ###   ########.fr       */
+/*   Created: 2023/07/02 14:37:17 by mathilfe          #+#    #+#             */
+/*   Updated: 2023/07/11 10:18:20 by mathilfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -50,7 +50,7 @@ int	main(void)
 	return (0);
 } 
 
-#include <stdlib.h>
+#include <stdlib.h> // lib for atoi
 int main(int argc, char **argv)
 {
 	if (argc > 1)

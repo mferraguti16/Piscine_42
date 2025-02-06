@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mferragu <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mathilfe <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/11 18:44:51 by mferragu          #+#    #+#             */
-/*   Updated: 2022/08/17 02:49:21 by mferragu         ###   ########.fr       */
+/*   Created: 2023/06/29 13:17:09 by mathilfe          #+#    #+#             */
+/*   Updated: 2023/06/29 17:05:24 by mathilfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
