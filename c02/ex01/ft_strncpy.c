@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mferragu <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mathilfe <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/20 20:46:17 by mferragu          #+#    #+#             */
-/*   Updated: 2022/08/22 23:20:04 by mferragu         ###   ########.fr       */
+/*   Created: 2023/07/04 08:44:10 by mathilfe          #+#    #+#             */
+/*   Updated: 2023/07/04 15:26:32 by mathilfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int main (void)
 		printf("Value at dest[%d] : %c\n", i, dest[i]);
 		i++;
 	}
-	// check position null byte with %d calls ASCII value 0 cause not printable cause control char (blank space with %c)
+	// check null byte position with %d calls ASCII value 0, not printable cause control char (blank space with %c)
 	printf("Valeur à dest[5]: %d\n", dest[5]); 
 
 	if (dest[5] == '\0') // array begins at 0 so dest[5] for checking null byte not 10!

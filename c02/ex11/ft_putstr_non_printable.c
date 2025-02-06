@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_non_printable.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mferragu <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mathilfe <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/28 05:10:49 by mferragu          #+#    #+#             */
-/*   Updated: 2022/08/29 00:45:18 by mferragu         ###   ########.fr       */
+/*   Created: 2023/07/17 12:43:33 by mathilfe          #+#    #+#             */
+/*   Updated: 2023/07/18 12:54:45 by mathilfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,12 +42,12 @@ void	ft_putstr_non_printable(char *str)
 }
 
 #include <stdio.h>
-/* int	main()
+int	main()
 {
 	char s[] = "dare*(#@!$";
 	ft_putstr_non_printable(s);
 	return (0);
-} */
+} 
 
 int	main(int argc, char **argv)
 {
@@ -59,9 +59,5 @@ int	main(int argc, char **argv)
 	return (1);
 }
 
-/* Écrire fonction qui affiche une chaîne de char à l’écran. 
-Si cette chaîne contient des caractères non-imprimables,
-ils devront être affichés sous forme hexa-décimale 
-(en minuscules) en les précédant d’un "backslash".
-if 32 <= str[i] && str[i] <= 126 == PRINTABLE
+/* if 32 <= str[i] && str[i] <= 126 == PRINTABLE
 if 32 < str[i] && str[i] < 126 == NON PRINTABLE */
