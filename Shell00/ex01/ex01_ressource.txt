@@ -1,0 +1,53 @@
+ex01: testShell00.tar ✅
+
+leave your current directory ex00 : cd .. ( using cd .. takes you up to the parent directory)
+create new directory ex01 : mkdir ex01
+move in your ex01 directory : cd ex01
+
+goals: 
+1 - add 40 byts in a file 
+2 - change the timestamp of your file
+3 - change the rights of your file
+
+create your file testShell00 : touch testShell00
+vi testShell00
+press i to write
+
+1 - add 40 byts in a file 
+
+first way to do it, manually:
+write exactly 39 char in your testShell00 file
+39 and not 40, the 40iest bit is the final \n bit you have in all string 
+
+esc + wq (or wq! if readonly error)
+
+cat -e 
+jai bien mes quarantes bits !
+second way to do it, artificially:
+without entering your file, on your terminal (command line) write : truncate -s 40 testShell00
+that will add artificially the 40 bits to your file
+
+or add artificially the 40 bits to your file : truncate -s 40 testShell00
+➜  ex01 git:(main) ✗ cat -e testShell00
+g pa 39 bits mé g truncate$ 
+^@^@^@^@^@^@^@^@^@^@^@^@%   
+
+g pa 39 bits mé g truncate$ : here we have only 27 bits 
+20 alpha + 6 space + nullbyte = 27 bits + 12 ^@ 
+
+if you have a permission denied : chmod 744 testShell00 and retry
+with this permission modification your rights look like that actually: -rwxr-xr-x
+
+the permission final look for your file will be done at the end, because only read permission for the user it's complicated to manipulate the file!
+-r--r-xr-x 1 XX XX 40 Jun 1 23:42 testShell00
+
+for now, let's change the timestamp:
+touch -t 06012342 testShell00
+the timestamp is the anglo-saxon one : Month-Day-Year/Or/Hour
+
+06012342
+MMJJhhmm
+
+could have been: 
+06012023
+MMJJYYYY
