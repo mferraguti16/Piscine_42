@@ -1,0 +1,25 @@
+ex00: z ✅
+
+create your directory ex00 : mkdir ex00 ( mkdir : make directory)
+move in you directory ex00 : cd ex00 ( cd : change directory)
+create your file : touch z (beware: lowercase not uppercase)
+open vim : vi z
+press i to write in vim 
+write Z ( beware: uppercase not lowercase)
+don't put any space or newline after your Z
+press esc to exit the vim write mod 
+write :wq (w to save and q to quit vim)
+
+cat -e (-e option allow you to see any missing space or newline)
+1 - ➜  ex00 git:(main) ✗ cat -e z 
+Z$
+good
+
+2 - ➜  ex00 git:(main) ✗ cat -e z
+Z $
+missing space
+
+3 - ➜  ex00 git:(main) ✗ cat -e z
+Z$
+$
+missing newline 
